@@ -1,7 +1,7 @@
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
-import LogoArea from "./Header/LogoArea";
-import Navigation from "./Header/Navigation";
+import LogoArea from "./LogoArea";
+import Navigation from "./Navigation";
 
 export default function Header() {
     return (

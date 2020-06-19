@@ -10,10 +10,10 @@ export default function LogoArea() {
             alignItems="center"
         >
 
-            <Grid item xs={4}>
-                Bild
+            <Grid item xs={2}>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71iXP+-teoL.png" alt="" width={"100%"}/>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={10}>
                 Text
             </Grid>
         </Grid>

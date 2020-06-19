@@ -1,20 +1,18 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './App.css';
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 
 
 export default function App() {
     return (
-        <>
-            <div className="App">
-                <Header/>
+        <div className="App">
+            <Header/>
 
             <Main/>
             <Footer/>
         </div>
-        </>
     );
 }
 
