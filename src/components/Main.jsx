@@ -1,8 +1,9 @@
 import React from "react";
+import "./Main.css"
 
 export default function Main(){
     return (
-        <div>Dinge im Main </div>
+        <main className="flex-grow">Dinge im Main </main>
     )
 
 }

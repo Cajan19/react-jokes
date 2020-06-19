@@ -10,9 +10,10 @@ export default function App() {
         <>
             <div className="App">
                 <Header/>
-            </div>
+
             <Main/>
             <Footer/>
+        </div>
         </>
     );
 }
