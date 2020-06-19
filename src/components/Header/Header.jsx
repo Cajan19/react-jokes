@@ -1,13 +1,15 @@
 import React from "react";
-import AppBar from "@material-ui/core/AppBar";
 import LogoArea from "./LogoArea";
 import Navigation from "./Navigation";
+import AppBar from "@material-ui/core/AppBar";
+
 
 export default function Header() {
+
     return (
-        <AppBar>
+        <AppBar position={"static"}>
             <LogoArea/>
-            <Navigation />
+            <Navigation/>
         </AppBar>
-    )
+    );
 }

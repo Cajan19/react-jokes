@@ -1,9 +1,10 @@
 import React from "react";
-import "./Main.css"
+import "./Main.css";
 
 export default function Main(){
-    return (
-        <main className="flex-grow">Dinge im Main </main>
-    )
-
+    return(
+        <main className={"Main"}>
+            <h1>Main Content</h1>
+        </main>
+    );
 }
