@@ -1,9 +1,10 @@
 import {Button, Menu, MenuItem} from "@material-ui/core";
 import React from "react";
 import "./Navigation.css";
+import {Link} from "react-router-dom";
 
 
-export default function Navigation(){
+export default function Navigation() {
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {
@@ -14,7 +15,7 @@ export default function Navigation(){
         setAnchorEl(null);
     };
 
-    return(
+    return (
         <div className={"buttonMenu"}>
             <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                 Open Menu
@@ -26,9 +27,16 @@ export default function Navigation(){
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
             >
-                <MenuItem onClick={handleClose}>Witz</MenuItem>
-                <MenuItem onClick={handleClose}>Witziger</MenuItem>
-                <MenuItem onClick={handleClose}>Haha</MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link to={"/"}>Home</Link>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link to={"/random"}>RandomJoke</Link>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link to={"randomten"}>Overload</Link>
+                </MenuItem>
+
             </Menu>
         </div>
     );
