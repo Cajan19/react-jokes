@@ -13,7 +13,7 @@ export default function RandomJoke() {
 
     return (
         <>
-            {joke && <JokeCard joke={joke}></JokeCard>}
+            {joke && <JokeCard key={joke.id} joke={joke}></JokeCard>}
         </>
     )
 

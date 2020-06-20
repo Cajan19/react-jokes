@@ -14,7 +14,7 @@ export default function TenJokes() {
     return (
         <>
             {jokes && jokes.map((joke) => (
-                <JokeCard joke={joke}></JokeCard>
+                <JokeCard key={joke.id} joke={joke}></JokeCard>
             ))}
         </>
     )
